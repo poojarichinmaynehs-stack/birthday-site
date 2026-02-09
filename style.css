@@ -222,6 +222,18 @@ body {
   transform: scale(0.96);
 }
 
+img{
+  width:100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  p{
+    font-size: 14px;
+  }
+}
+
+
 
 
 
