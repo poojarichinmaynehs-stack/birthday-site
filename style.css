@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffdde7;
+  color: #4A4A4A;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 40px;
+  background: linear-gradient(to bottom, #ffd3e0, #f683a9);
+}
+
+.curve-img {
+  width: 660px;
+  border-radius: 30px;   /* yahi curve hai */
+  margin-top: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* CENTER */
+.hero-center {
+  text-align: center;
+  flex: 1;
+}
+
+/* SIDES */
+.side {
+  width: 200px;
+  display: flex;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.gif {
+  width: 160px;
+  opacity: 0.9;
+}
+
+/* birthday gifs row */
+.birthday-gifs {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.message h2 {
+  font-family: 'Playfair Display', serif;
+  color: #ff6da0;
+}
+
+.section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 40px;
+  background: #fefefe;
+}
+
+.section-center {
+  flex: 1;
+  text-align: center;
+}
+
+.section-center h2 {
+  font-family: 'Playfair Display', serif;
+  color: #f9bbd1;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.section-center p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #3d3d3d;
+}
+
+/* Reuse from section 1 */
+.curve-img {
+  width: 220px;
+  border-radius: 40px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.side {
+  width: 180px;
+  display: flex;
+}
+
+.section-3 .left {
+  justify-content: flex-start;
+}
+
+.section-3 .right {
+  justify-content: flex-end;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;   /* 👈 SABSE IMPORTANT */
+}
+
+/* LOGIN PAGE */
+#login-page {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(#fff7fb, #fde2eb);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+}
+
+/* MAIN SITE HIDDEN */
+#main-site {
+  display: none;
+}
+.input-box {
+  position: relative;
+  width: 260px;
+  margin: 20px 0;
+}
+
+#login-page button:hover {
+  box-shadow: 0 8px 20px rgba(244,166,193,0.4);
+}
+
+
+.input-box input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 2px solid #f4a6c1;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  color: #3d3d3d;
+}
+
+/* Floating label */
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  color: #999;
+  font-size: 0.9rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s ease;
+  background: #fff7fb;
+  padding: 0 6px;
+}
+
+/* On focus or when typing */
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -8px;
+  font-size: 0.75rem;
+  color: #f4a6c1;
+}
+
+/* Soft glow */
+.input-box input:focus {
+  box-shadow: 0 0 0 3px rgba(244,166,193,0.25);
+}
+
+.input-box input {
+  backdrop-filter: blur(6px);
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+/* ===== ENTER BUTTON STYLE ===== */
+#enter-btn {
+  background: linear-gradient(135deg, #f6b1c3, #e88aa3);
+  color: white;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 40px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 12px 30px rgba(232,138,163,0.35);
+}
+
+#enter-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 18px 40px rgba(232,138,163,0.45);
+}
+
+#enter-btn:active {
+  transform: scale(0.96);
+}
+
+
+
+
